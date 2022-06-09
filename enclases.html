@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .color{
+        background-color:brown;
+        width : 350px;
+        height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row" id="divmagico">
+            <div class="col-4 offset-4">
+                <!--<img class="imgn" src=https://cdn.pixabay.com/photo/2017/10/06/01/52/fire-2821775__480.jpg alt="fire" >
+            </div>-->
+        </div>
+    </div>
+    <div class="solito"></div>
+
+    <script>
+        const magicdiv = document.querySelector('.solito')
+        magicdiv.classList.add('color')
+        // <====== conf img=========>
+        const img = document.createElement('img')
+        img.setAttribute('src' , 'https://food.fnr.sndimg.com/content/dam/images/food/fullset/2014/10/15/0/fnd_Ice-Cubes-thinkstock.jpg.rend.hgtvcom.616.462.suffix/1413404558868.jpeg');
+        img.setAttribute('alt' , 'fight fire with fire');
+        magicdiv.appendChild(img);
+        img.style.display = 'block'
+        img.style.width = '300px'
+        img.style.margin = 'auto'
+        img.style.paddingTop = '25px'
+        //<=======================>
+        /*mousedown
+        mouseenter
+        mouseleave
+        mousemove
+        mouseout
+        mouseover
+        mouseup*/
+        //creo f para ocultar ?
+    
+        
+
+        magicdiv.addEventListener('mouseenter', function(){
+            //magicdiv.classList.toggle('img')
+            img.style.display = 'none'
+            
+            
+            console.log('nope')
+        })
+        magicdiv.addEventListener('mouseleave', function(){
+            //magicdiv.classList.toggle('img')
+            img.style.display = '';
+            img.style.padding = '15px' // arreglo rapido ZzZzz
+
+            
+            
+            
+            console.log('yep')
+        })
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
